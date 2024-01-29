@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #eaafc8, #654ea3);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+movie-list {
+  padding: 20px;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 555px) {
+  main {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 556px) and (max-width: 1000px) {
+  main {
+    max-width: 700px;
+  }
+
+  movie-list {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  movie-item {
+    width: 45%;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 10063px) {
+  movie-list {
+    justify-content: center;
+  }
+}
